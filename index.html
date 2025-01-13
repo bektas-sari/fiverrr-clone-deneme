@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fiverr Clone</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header Bölümü -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="/">Fiverr Clone</a>
+            </div>
+            <div class="nav-links">
+                <a href="#business" class="nav-item">Fiverr Business</a>
+                <a href="#categories" class="nav-item">Keşfet</a>
+                <a href="#" class="nav-item">Türkçe</a>
+                <a href="login.html" class="nav-item">Giriş Yap</a>
+                <a href="register.html" class="nav-item btn-join">Kaydol</a>
+            </div>
+            <div class="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Ana Banner -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Freelancer hizmetleri için doğru adres</h1>
+            <p>İhtiyacınız olan her türlü dijital hizmeti bulun</p>
+            <div class="search-box">
+                <input type="text" placeholder="Hangi hizmeti arıyorsunuz?">
+                <button class="search-btn"><i class="fas fa-search"></i> Ara</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Popüler Hizmetler -->
+    <section class="services" id="services">
+        <h2>Popüler Hizmetler</h2>
+        <div class="service-slider">
+            <a href="services/logo-design.html" class="service-card">
+                <img src="https://fiverr-res.cloudinary.com/q_auto,f_auto,w_320,dpr_1.0/v1/attachments/generic_asset/asset/f23a46693ef0e611430e232cbc989e2b-1617004615068/logo%20design_2x.png" alt="Logo Tasarım">
+                <div class="service-info">
+                    <div class="service-header">
+                        <i class="fas fa-paint-brush"></i>
+                        <h3>Logo Tasarımı</h3>
+                    </div>
+                    <p>₺250'den başlayan fiyatlarla</p>
+                </div>
+            </a>
+            <a href="services/wordpress.html" class="service-card">
+                <img src="https://fiverr-res.cloudinary.com/q_auto,f_auto,w_320,dpr_1.0/v1/attachments/generic_asset/asset/d51cf66f8a7026eb56a8c8e6b6793b24-1617027896306/wordpress-services_2x.png" alt="WordPress">
+                <div class="service-info">
+                    <div class="service-header">
+                        <i class="fab fa-wordpress"></i>
+                        <h3>WordPress Geliştirme</h3>
+                    </div>
+                    <p>₺500'den başlayan fiyatlarla</p>
+                </div>
+            </a>
+            <a href="services/seo.html" class="service-card">
+                <img src="https://fiverr-res.cloudinary.com/q_auto,f_auto,w_320,dpr_1.0/v1/attachments/generic_asset/asset/aa2ff6a65708e858cd563bedbc1f9e48-1617004762616/seo_2x.png" alt="SEO">
+                <div class="service-info">
+                    <div class="service-header">
+                        <i class="fas fa-search"></i>
+                        <h3>SEO Hizmetleri</h3>
+                    </div>
+                    <p>₺750'den başlayan fiyatlarla</p>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <!-- Popüler Kategoriler -->
+    <section class="categories" id="categories">
+        <h2>Popüler Kategoriler</h2>
+        <div class="category-grid">
+            <a href="categories/graphic-design.html" class="category-card">
+                <img src="https://fiverr-res.cloudinary.com/q_auto,f_auto,w_255,dpr_1.0/v1/attachments/generic_asset/asset/055f758c1f5b3a1ab38c047dce553860-1598561741678/logo-design-2x.png" alt="Grafik Tasarım">
+                <h3>Grafik Tasarım</h3>
+            </a>
+            <a href="categories/web-development.html" class="category-card">
+                <img src="https://fiverr-res.cloudinary.com/q_auto,f_auto,w_255,dpr_1.0/v1/attachments/generic_asset/asset/ae11e2d45410b0eded7fba0e46b09dbd-1598561917003/wordpress-2x.png" alt="Web Geliştirme">
+                <h3>Web Geliştirme</h3>
+            </a>
+            <div class="category-card">
+                <a href="services/digital-marketing.html">
+                    <img src="https://fiverr-res.cloudinary.com/q_auto,f_auto,w_255,dpr_1.0/v1/attachments/generic_asset/asset/055f758c1f5b3a1ab38c047dce553860-1598561741667/social-2x.png" alt="Dijital Pazarlama">
+                    <h3>Dijital Pazarlama</h3>
+                    <p>Sosyal Medya, SEO ve Daha Fazlası</p>
+                </a>
+            </div>
+            <a href="categories/video-animation.html" class="category-card">
+                <img src="https://fiverr-res.cloudinary.com/q_auto,f_auto,w_255,dpr_1.0/v1/attachments/generic_asset/asset/055f758c1f5b3a1ab38c047dce553860-1598561741663/animated-explainer-2x.png" alt="Video Prodüksiyon">
+                <h3>Video Prodüksiyon</h3>
+            </a>
+        </div>
+    </section>
+
+    <!-- Business Section -->
+    <section class="business" id="business">
+        <div class="business-content">
+            <div class="business-text">
+                <h2>Fiverr Business</h2>
+                <h3>Şirketiniz için özel çözümler</h3>
+                <ul>
+                    <li><i class="fas fa-check"></i> Özel hesap yönetimi</li>
+                    <li><i class="fas fa-check"></i> Kurumsal fiyatlandırma</li>
+                    <li><i class="fas fa-check"></i> Ekip yönetimi araçları</li>
+                </ul>
+                <a href="#contact" class="btn-business">İletişime Geçin</a>
+            </div>
+            <div class="business-image">
+                <img src="https://fiverr-res.cloudinary.com/q_auto,f_auto,w_870,dpr_1.0/v1/attachments/generic_asset/asset/d9c17ceebda44764b591a8074a898e63-1599597624757/business-desktop-870-x1.png" alt="Fiverr Business">
+            </div>
+        </div>
+    </section>
+
+    <!-- İstatistikler -->
+    <section class="stats">
+        <div class="stats-container">
+            <div class="stat-item">
+                <h3>2M+</h3>
+                <p>Aktif Freelancer</p>
+            </div>
+            <div class="stat-item">
+                <h3>500K+</h3>
+                <p>Tamamlanan İş</p>
+            </div>
+            <div class="stat-item">
+                <h3>150+</h3>
+                <p>Ülke</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Kategoriler</h4>
+                <ul>
+                    <li><a href="categories/graphic-design.html">Grafik & Tasarım</a></li>
+                    <li><a href="categories/digital-marketing.html">Dijital Pazarlama</a></li>
+                    <li><a href="categories/writing.html">Yazı & Çeviri</a></li>
+                    <li><a href="categories/video-animation.html">Video & Animasyon</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Hakkımızda</h4>
+                <ul>
+                    <li><a href="about/careers.html">Kariyer</a></li>
+                    <li><a href="about/press.html">Basın</a></li>
+                    <li><a href="about/contact.html">İletişim</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Topluluk</h4>
+                <ul>
+                    <li><a href="community/events.html">Etkinlikler</a></li>
+                    <li><a href="community/blog.html">Blog</a></li>
+                    <li><a href="community/forum.html">Forum</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Bizi Takip Edin</h4>
+                <div class="social-links">
+                    <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-info">
+                <p>&copy; 2024 Fiverr Clone. Tüm hakları saklıdır.</p>
+                <div class="footer-links">
+                    <a href="privacy.html">Gizlilik Politikası</a>
+                    <a href="terms.html">Kullanım Şartları</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scroll için
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Mobile menü için
+        const mobileMenu = document.querySelector('.mobile-menu');
+        const navLinks = document.querySelector('.nav-links');
+        
+        mobileMenu.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+</body>
+</html> 

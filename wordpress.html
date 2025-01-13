@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WordPress Geliştirme - Fiverr Clone</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="services.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="../index.html"><i class="fas fa-arrow-left"></i> Fiverr Clone</a>
+            </div>
+            <div class="nav-links">
+                <a href="../index.html#services" class="nav-item">Hizmetler</a>
+                <a href="../index.html#categories" class="nav-item">Kategoriler</a>
+                <a href="../index.html#business" class="nav-item">Business</a>
+                <a href="../login.html" class="nav-item">Giriş Yap</a>
+                <a href="../register.html" class="nav-item btn-join">Kaydol</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="service-detail">
+        <div class="service-header">
+            <div class="service-title">
+                <i class="fab fa-wordpress service-icon"></i>
+                <h1>WordPress Geliştirme</h1>
+            </div>
+            <p class="service-description">Profesyonel WordPress web siteleri ile online varlığınızı güçlendirin</p>
+        </div>
+
+        <div class="service-packages">
+            <div class="package-card">
+                <h3>Başlangıç Paketi</h3>
+                <div class="price">₺500</div>
+                <ul>
+                    <li><i class="fas fa-check"></i> Tema Kurulumu</li>
+                    <li><i class="fas fa-check"></i> 5 Sayfa</li>
+                    <li><i class="fas fa-check"></i> Temel SEO</li>
+                    <li><i class="fas fa-check"></i> Mobil Uyumlu</li>
+                    <li><i class="fas fa-check"></i> 5 Gün Teslimat</li>
+                </ul>
+                <button class="btn-order">Sipariş Ver</button>
+            </div>
+
+            <div class="package-card featured">
+                <div class="featured-label">Popüler</div>
+                <h3>Standart Paket</h3>
+                <div class="price">₺1000</div>
+                <ul>
+                    <li><i class="fas fa-check"></i> Premium Tema</li>
+                    <li><i class="fas fa-check"></i> 10 Sayfa</li>
+                    <li><i class="fas fa-check"></i> Gelişmiş SEO</li>
+                    <li><i class="fas fa-check"></i> E-ticaret Entegrasyonu</li>
+                    <li><i class="fas fa-check"></i> Hızlandırma Optimizasyonu</li>
+                    <li><i class="fas fa-check"></i> 10 Gün Teslimat</li>
+                </ul>
+                <button class="btn-order">Sipariş Ver</button>
+            </div>
+
+            <div class="package-card">
+                <h3>Premium Paket</h3>
+                <div class="price">₺2000</div>
+                <ul>
+                    <li><i class="fas fa-check"></i> Özel Tema Tasarımı</li>
+                    <li><i class="fas fa-check"></i> Sınırsız Sayfa</li>
+                    <li><i class="fas fa-check"></i> Kapsamlı SEO</li>
+                    <li><i class="fas fa-check"></i> Tam E-ticaret Çözümü</li>
+                    <li><i class="fas fa-check"></i> SSL Sertifikası</li>
+                    <li><i class="fas fa-check"></i> Güvenlik Paketi</li>
+                    <li><i class="fas fa-check"></i> 15 Gün Teslimat</li>
+                </ul>
+                <button class="btn-order">Sipariş Ver</button>
+            </div>
+        </div>
+
+        <!-- Yorumlar Bölümü -->
+        <section class="reviews">
+            <h2>Müşteri Yorumları</h2>
+            <div class="review-list">
+                <div class="review-card">
+                    <div class="review-header">
+                        <img src="https://randomuser.me/api/portraits/men/1.jpg" alt="Kullanıcı" class="user-avatar">
+                        <div class="review-info">
+                            <h4>Ahmet Yılmaz</h4>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="review-text">Harika bir iş çıkardılar. Tam istediğim gibi bir web sitesi oldu. Özellikle mobil uyumluluğu çok başarılı.</p>
+                </div>
+
+                <div class="review-card">
+                    <div class="review-header">
+                        <img src="https://randomuser.me/api/portraits/women/1.jpg" alt="Kullanıcı" class="user-avatar">
+                        <div class="review-info">
+                            <h4>Ayşe Demir</h4>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="review-text">E-ticaret entegrasyonu çok başarılı. Satışlarım artmaya başladı. Teşekkürler!</p>
+                </div>
+            </div>
+
+            <!-- Yorum Formu -->
+            <div class="review-form">
+                <h3>Yorum Yapın</h3>
+                <form>
+                    <div class="form-group">
+                        <label for="rating">Puanınız</label>
+                        <div class="rating-input">
+                            <i class="far fa-star" data-rating="1"></i>
+                            <i class="far fa-star" data-rating="2"></i>
+                            <i class="far fa-star" data-rating="3"></i>
+                            <i class="far fa-star" data-rating="4"></i>
+                            <i class="far fa-star" data-rating="5"></i>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="comment">Yorumunuz</label>
+                        <textarea id="comment" rows="4" required></textarea>
+                    </div>
+                    <button type="submit" class="btn-submit">Yorum Yap</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        // Yıldız derecelendirme sistemi
+        const ratingStars = document.querySelectorAll('.rating-input i');
+        ratingStars.forEach(star => {
+            star.addEventListener('click', function() {
+                const rating = this.getAttribute('data-rating');
+                ratingStars.forEach(s => {
+                    const sRating = s.getAttribute('data-rating');
+                    if (sRating <= rating) {
+                        s.classList.remove('far');
+                        s.classList.add('fas');
+                    } else {
+                        s.classList.remove('fas');
+                        s.classList.add('far');
+                    }
+                });
+            });
+        });
+
+        // Yorum formu gönderimi
+        const reviewForm = document.querySelector('.review-form form');
+        reviewForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Yorumunuz gönderildi!');
+            this.reset();
+            ratingStars.forEach(s => {
+                s.classList.remove('fas');
+                s.classList.add('far');
+            });
+        });
+    </script>
+</body>
+</html> 

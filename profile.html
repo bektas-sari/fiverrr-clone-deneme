@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil - Fiverr Clone</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="profile.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html">Fiverr Clone</a>
+            </div>
+            <div class="nav-links">
+                <a href="index.html#services" class="nav-item">Hizmetler</a>
+                <a href="index.html#categories" class="nav-item">Kategoriler</a>
+                <a href="index.html#business" class="nav-item">Business</a>
+                <div class="profile-menu">
+                    <img src="https://randomuser.me/api/portraits/men/1.jpg" alt="Profil" class="profile-avatar">
+                    <div class="profile-dropdown">
+                        <a href="profile.html">Profilim</a>
+                        <a href="orders.html">Siparişlerim</a>
+                        <a href="messages.html">Mesajlar</a>
+                        <a href="settings.html">Ayarlar</a>
+                        <a href="login.html">Çıkış Yap</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="profile-container">
+        <!-- Profil Başlığı -->
+        <section class="profile-header">
+            <div class="profile-cover">
+                <img src="https://via.placeholder.com/1200x300" alt="Kapak Fotoğrafı">
+                <button class="btn-edit-cover"><i class="fas fa-camera"></i> Kapak Fotoğrafını Değiştir</button>
+            </div>
+            <div class="profile-info">
+                <div class="profile-avatar-large">
+                    <img src="https://randomuser.me/api/portraits/men/1.jpg" alt="Profil">
+                    <button class="btn-edit-avatar"><i class="fas fa-camera"></i></button>
+                </div>
+                <div class="profile-details">
+                    <h1>Ahmet Yılmaz</h1>
+                    <p class="profile-title">Web Geliştirici & WordPress Uzmanı</p>
+                    <div class="profile-stats">
+                        <div class="stat">
+                            <i class="fas fa-star"></i>
+                            <span>4.9 (128 Değerlendirme)</span>
+                        </div>
+                        <div class="stat">
+                            <i class="fas fa-check-circle"></i>
+                            <span>234 Tamamlanan İş</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Profil İçeriği -->
+        <div class="profile-content">
+            <!-- Sol Sidebar -->
+            <aside class="profile-sidebar">
+                <div class="profile-card">
+                    <h3>Hakkımda</h3>
+                    <p>5 yıllık deneyimli web geliştirici. WordPress ve frontend geliştirme konularında uzmanım.</p>
+                    <div class="profile-meta">
+                        <div class="meta-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>İstanbul, Türkiye</span>
+                        </div>
+                        <div class="meta-item">
+                            <i class="fas fa-user-clock"></i>
+                            <span>2019'dan beri üye</span>
+                        </div>
+                        <div class="meta-item">
+                            <i class="fas fa-clock"></i>
+                            <span>Ortalama yanıt süresi: 2 saat</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="profile-card">
+                    <h3>Beceriler</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">WordPress</span>
+                        <span class="skill-tag">HTML5</span>
+                        <span class="skill-tag">CSS3</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">PHP</span>
+                        <span class="skill-tag">SEO</span>
+                    </div>
+                </div>
+            </aside>
+
+            <!-- Ana İçerik -->
+            <div class="profile-main">
+                <!-- Aktif Hizmetler -->
+                <section class="profile-services">
+                    <div class="section-header">
+                        <h2>Aktif Hizmetler</h2>
+                        <a href="new-service.html" class="btn-new-service">
+                            <i class="fas fa-plus"></i> Yeni Hizmet Ekle
+                        </a>
+                    </div>
+                    <div class="service-grid">
+                        <div class="service-card">
+                            <img src="https://fiverr-res.cloudinary.com/q_auto,f_auto,w_320,dpr_1.0/v1/attachments/generic_asset/asset/d51cf66f8a7026eb56a8c8e6b6793b24-1617027896306/wordpress-services_2x.png" alt="WordPress">
+                            <div class="service-info">
+                                <h3>WordPress Web Sitesi Geliştirme</h3>
+                                <p class="price">₺1000'den başlayan fiyatlarla</p>
+                                <div class="service-stats">
+                                    <span><i class="fas fa-star"></i> 4.9</span>
+                                    <span><i class="fas fa-tasks"></i> 45 Sipariş</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="service-card">
+                            <img src="https://fiverr-res.cloudinary.com/q_auto,f_auto,w_320,dpr_1.0/v1/attachments/generic_asset/asset/aa2ff6a65708e858cd563bedbc1f9e48-1617004762616/seo_2x.png" alt="SEO">
+                            <div class="service-info">
+                                <h3>SEO Optimizasyonu</h3>
+                                <p class="price">₺500'den başlayan fiyatlarla</p>
+                                <div class="service-stats">
+                                    <span><i class="fas fa-star"></i> 4.8</span>
+                                    <span><i class="fas fa-tasks"></i> 32 Sipariş</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Değerlendirmeler -->
+                <section class="profile-reviews">
+                    <h2>Son Değerlendirmeler</h2>
+                    <div class="review-list">
+                        <div class="review-card">
+                            <div class="review-header">
+                                <img src="https://randomuser.me/api/portraits/women/1.jpg" alt="Müşteri" class="user-avatar">
+                                <div class="review-info">
+                                    <h4>Ayşe Demir</h4>
+                                    <div class="rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="review-text">Çok profesyonel bir çalışma oldu. Süreç boyunca iletişimi hiç koparmadı ve isteklerimi tam olarak karşıladı.</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        // Profil menüsü için
+        const profileMenu = document.querySelector('.profile-menu');
+        profileMenu.addEventListener('click', () => {
+            profileMenu.classList.toggle('active');
+        });
+
+        // Kapak fotoğrafı değiştirme
+        const btnEditCover = document.querySelector('.btn-edit-cover');
+        btnEditCover.addEventListener('click', () => {
+            // Dosya seçme dialogu
+            const input = document.createElement('input');
+            input.type = 'file';
+            input.accept = 'image/*';
+            input.click();
+        });
+
+        // Profil fotoğrafı değiştirme
+        const btnEditAvatar = document.querySelector('.btn-edit-avatar');
+        btnEditAvatar.addEventListener('click', () => {
+            // Dosya seçme dialogu
+            const input = document.createElement('input');
+            input.type = 'file';
+            input.accept = 'image/*';
+            input.click();
+        });
+    </script>
+</body>
+</html> 

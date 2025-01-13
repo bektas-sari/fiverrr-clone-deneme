@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ödeme - Fiverr Clone</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="checkout.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html">Fiverr Clone</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="checkout-container">
+        <div class="checkout-content">
+            <!-- Sol Taraf - Ödeme Formu -->
+            <div class="checkout-form">
+                <h1>Ödeme Bilgileri</h1>
+                
+                <!-- Ödeme Yöntemleri -->
+                <div class="payment-methods">
+                    <h2>Ödeme Yöntemi</h2>
+                    <div class="payment-options">
+                        <label class="payment-option">
+                            <input type="radio" name="payment" value="card" checked>
+                            <span class="option-content">
+                                <i class="fas fa-credit-card"></i>
+                                Kredi/Banka Kartı
+                            </span>
+                        </label>
+                        <label class="payment-option">
+                            <input type="radio" name="payment" value="paypal">
+                            <span class="option-content">
+                                <i class="fab fa-paypal"></i>
+                                PayPal
+                            </span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Kart Bilgileri -->
+                <form class="card-form">
+                    <div class="form-group">
+                        <label>Kart Üzerindeki İsim</label>
+                        <input type="text" required placeholder="Kart sahibinin adı">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Kart Numarası</label>
+                        <div class="card-input">
+                            <input type="text" required placeholder="1234 5678 9012 3456" maxlength="19">
+                            <div class="card-icons">
+                                <i class="fab fa-cc-visa"></i>
+                                <i class="fab fa-cc-mastercard"></i>
+                                <i class="fab fa-cc-amex"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Son Kullanma Tarihi</label>
+                            <div class="expiry-inputs">
+                                <input type="text" required placeholder="AA" maxlength="2">
+                                <span>/</span>
+                                <input type="text" required placeholder="YY" maxlength="2">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>CVV</label>
+                            <div class="cvv-input">
+                                <input type="text" required placeholder="123" maxlength="3">
+                                <i class="fas fa-question-circle tooltip-trigger"></i>
+                                <div class="tooltip">
+                                    Kartınızın arkasındaki 3 haneli güvenlik kodu
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="save-card">
+                        <label>
+                            <input type="checkbox">
+                            <span>Kartımı gelecekteki ödemeler için kaydet</span>
+                        </label>
+                    </div>
+                </form>
+            </div>
+
+            <!-- Sağ Taraf - Sipariş Özeti -->
+            <div class="order-summary">
+                <h2>Sipariş Özeti</h2>
+                
+                <div class="service-details">
+                    <img src="https://fiverr-res.cloudinary.com/q_auto,f_auto,w_320,dpr_1.0/v1/attachments/generic_asset/asset/d51cf66f8a7026eb56a8c8e6b6793b24-1617027896306/wordpress-services_2x.png" alt="WordPress">
+                    <div class="service-info">
+                        <h3>WordPress Web Sitesi Geliştirme</h3>
+                        <p class="seller">Satıcı: Ahmet Yılmaz</p>
+                        <div class="package-type">Standart Paket</div>
+                    </div>
+                </div>
+
+                <div class="price-breakdown">
+                    <div class="price-item">
+                        <span>Hizmet Ücreti</span>
+                        <span>₺1000.00</span>
+                    </div>
+                    <div class="price-item">
+                        <span>Hizmet Bedeli</span>
+                        <span>₺50.00</span>
+                    </div>
+                    <div class="price-item total">
+                        <span>Toplam</span>
+                        <span>₺1050.00</span>
+                    </div>
+                    <div class="delivery-time">
+                        <i class="fas fa-clock"></i>
+                        Tahmini Teslimat: 10 gün
+                    </div>
+                </div>
+
+                <button type="submit" class="btn-pay">
+                    <i class="fas fa-lock"></i>
+                    Güvenli Ödeme Yap
+                </button>
+
+                <div class="secure-payment">
+                    <i class="fas fa-shield-alt"></i>
+                    SSL şifrelemesi ile güvenli ödeme
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        // Kart numarası formatı
+        const cardInput = document.querySelector('.card-input input');
+        cardInput.addEventListener('input', function(e) {
+            let value = e.target.value.replace(/\s+/g, '').replace(/[^0-9]/gi, '');
+            let formattedValue = '';
+            for(let i = 0; i < value.length; i++) {
+                if(i > 0 && i % 4 === 0) {
+                    formattedValue += ' ';
+                }
+                formattedValue += value[i];
+            }
+            e.target.value = formattedValue;
+        });
+
+        // CVV tooltip
+        const tooltipTrigger = document.querySelector('.tooltip-trigger');
+        const tooltip = document.querySelector('.tooltip');
+        
+        tooltipTrigger.addEventListener('mouseenter', () => {
+            tooltip.style.display = 'block';
+        });
+        
+        tooltipTrigger.addEventListener('mouseleave', () => {
+            tooltip.style.display = 'none';
+        });
+
+        // Form gönderimi
+        const form = document.querySelector('.card-form');
+        form.addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Ödeme başarıyla tamamlandı!');
+            window.location.href = 'index.html';
+        });
+    </script>
+</body>
+</html> 
